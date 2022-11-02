@@ -4,23 +4,13 @@
 //Usar funciones en este ejercicio
 
 #include <stdio.h>
+int main()
+{
+  FILE *D1 = fopen("numeros.txt", "w");
+  FILE *D2 = fopen("numeros_negativos.txt", "w");
 
 void imprimirNumero(int numero){
     printf("El numero es %d", numero);
     
 }
 
-int main(int argc, char const *argv[])
-{
-    int numero=10;
-
-    imprimirNumero(numero);
-
-    if (numero % 2 == 0) {
-    printf("\nEs par");
-  } else {
-    printf("\nEs impar");
-  }
-
-    return 0;
-}
